@@ -17,7 +17,7 @@ clients = client.my_communities()
 for x, name in enumerate(clients.name, 1):
     print(f"{x}.{name}")
 ndc_Id = clients.ndcId[int(input("Select the community >> ")) - 1]
-chats = client.my_chat_threads(ndc_Id=ndc_Id, size=100)
+chats = client.my_chat_threads(ndc_Id=ndcId, size=100)
 for z, title in enumerate(chats.title, 1):
     print(f"{z}.{title}")
 thread_Id = chats.thread_Id[int(input("Select The Chat >> ")) - 1]
